@@ -1,0 +1,101 @@
+============================================DevOps Notes==============================================
+
+DevOps cycle
+
+step 1 : Source Code/Control Management   -- Git
+
+	Github/Gitlab/bitbucket
+
+step 2: Continous Integration
+	Jenkins
+	bambo/circle 
+
+step 3 : staging environment or production like server
+
+After CD
+
+infrastructure as a code --- {teraform, docker}  
+configuration management --- {pupet, chef, ansible}
+Archestration --- { docker sworm, kubernetes}
+Monitoring (keeping track of each service) --- {ELK- elastic search, log stash and kibana, nagios}
+
+
+
+=============================================python==============================
+------------------data types--------------------
+
+
+Numbers
+String
+List
+Tuple
+Set
+Dictionary
+
+======================flow control=================
+ x = int(input("Please enter an integer: "))
+Please enter an integer: 42
+>>> if x < 0:
+...     x = 0
+...     print('Negative changed to zero')
+... elif x == 0:
+...     print('Zero')
+... elif x == 1:
+...     print('Single')
+... else:
+...     print('More')
+
+---------------------------for statement------------------------
+
+>>> # Measure some strings:
+... words = ['cat', 'window', 'defenestrate']
+>>> for w in words:
+...     print(w, len(w))
+...
+cat 3
+window 6
+defenestrate 12
+
+for i in range(5):
+...     print(i)
+...
+0
+1
+2
+3
+4
+
+
+
+=============================================functions===========================================
+
+def fib(n):    # write Fibonacci series up to n
+...     """Print a Fibonacci series up to n."""
+...     a, b = 0, 1
+...     while a < n:
+...         print(a, end=' ')
+...         a, b = b, a+b
+...     print()
+...
+>>> # Now call the function we just defined:
+... fib(2000)
+0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597
+
+
+list
+
+
+==============================Regular Expression=======================
+regexpal.com
+\d - Any Numeric digit from 0 to 9
+\D - Any Character that is not a numeric digit from 0 to 9
+\w - Any letter, numeric digit or the underscore character.
+\W - Any character that not a letter, numeric digit or the underscore
+\s - Any spce, tab or new line character
+\S - Any character that is not a space, tab or new line 
+^ - caret means start
+$ - means end
+. - single caracter
+
+
+case sensitive and in sensitive search
